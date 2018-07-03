@@ -4,7 +4,9 @@
   "description": "A boilerplate project for creating beautiful sites using Magento, powered by Foundation 5.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,8 @@
     "merge-stream": "^0.1.8",
     "run-sequence": "^1.1.1",
     "temp-write": "^1.1.0",
-    "underscore": "^1.8.2"
-  }
+    "underscore": "^1.8.2",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
